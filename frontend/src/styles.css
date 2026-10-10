@@ -1,0 +1,143 @@
+@import "tailwindcss";
+@import "@fontsource-variable/source-serif-4";
+@import "@fontsource-variable/hanken-grotesk";
+
+/* ------------------------------------------------------------------ jetons
+   Papier de cahier de labo, encre bleu-noir, accent bleu stylo-plume.
+   Le niveau d'un article est encodé par la densité de l'encre (voir .spine-*). */
+
+:root {
+  --paper: #f2f3ee;
+  --surface: #fafbf7;
+  --ink: #1b2033;
+  --ink-muted: #5b6275;
+  --rule: #d8dbd1;
+  --accent: #2f55d4;
+  --accent-ink: #ffffff;
+  --accent-soft: #e3e9fb;
+  --warn: #8a4b0f;
+  --warn-soft: #f6ead9;
+  --danger: #a3282b;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --paper: #131726;
+  --surface: #1a1f33;
+  --ink: #e4e7f0;
+  --ink-muted: #9aa1b5;
+  --rule: #2a3048;
+  --accent: #8aa4ff;
+  --accent-ink: #0f1424;
+  --accent-soft: #232c4d;
+  --warn: #e8b27a;
+  --warn-soft: #33281c;
+  --danger: #f08a8c;
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #131726;
+    --surface: #1a1f33;
+    --ink: #e4e7f0;
+    --ink-muted: #9aa1b5;
+    --rule: #2a3048;
+    --accent: #8aa4ff;
+    --accent-ink: #0f1424;
+    --accent-soft: #232c4d;
+    --warn: #e8b27a;
+    --warn-soft: #33281c;
+    --danger: #f08a8c;
+    color-scheme: dark;
+  }
+}
+
+@theme inline {
+  --font-serif: "Source Serif 4 Variable", Georgia, serif;
+  --font-sans: "Hanken Grotesk Variable", system-ui, sans-serif;
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-rule: var(--rule);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-danger: var(--danger);
+}
+
+@layer base {
+html {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+}
+
+/* ------------------------------------------------------------------ tranche de niveau */
+
+.spine {
+  width: 6px;
+  border-radius: 2px;
+  flex: none;
+  align-self: stretch;
+}
+.spine-1 { background: var(--accent); }
+.spine-2 { background: color-mix(in srgb, var(--accent) 68%, transparent); }
+.spine-3 { background: color-mix(in srgb, var(--accent) 42%, transparent); }
+.spine-4 { background: color-mix(in srgb, var(--accent) 22%, transparent); }
+.spine-unranked {
+  background: transparent;
+  box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--ink-muted) 55%, transparent);
+}
+.spine-preprint {
+  background: repeating-linear-gradient(
+    -45deg,
+    color-mix(in srgb, var(--accent) 60%, transparent) 0 3px,
+    transparent 3px 6px
+  );
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) 35%, transparent);
+}
+
+/* ------------------------------------------------------------------ mouvement */
+
+.abstract-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 220ms ease;
+}
+.abstract-panel[data-open="true"] { grid-template-rows: 1fr; }
+.abstract-panel > div { overflow: hidden; }
+
+@keyframes arrive {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+.results-arrive { animation: arrive 320ms ease-out both; }
+
+@keyframes shimmer {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 1; }
+}
+.skeleton { background: var(--rule); border-radius: 4px; animation: shimmer 1.4s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .abstract-panel { transition: none; }
+  .results-arrive, .skeleton { animation: none; }
+}

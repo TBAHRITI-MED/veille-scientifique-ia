@@ -1,0 +1,28 @@
+# Blueprint Render : déploiement en un clic depuis le dépôt GitHub.
+# Les secrets (sync: false) sont demandés dans le tableau de bord, jamais écrits ici.
+services:
+  - type: web
+    name: veille-scientifique-ia
+    runtime: docker
+    plan: free
+    region: frankfurt
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: APP_PASSWORD
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: CONTACT_EMAIL
+        sync: false
+      - key: SEMANTIC_SCHOLAR_API_KEY
+        sync: false
+      - key: OPENALEX_API_KEY
+        sync: false
+      - key: NCBI_API_KEY
+        sync: false
+      - key: LLM_MODEL
+        value: claude-haiku-5-5
+      - key: LLM_MAX_PAPERS
+        value: "40"

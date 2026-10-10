@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2025//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_250101.dtd">
+<PubmedArticleSet>
+  <PubmedArticle>
+    <MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM">
+      <PMID Version="1">41000001</PMID>
+      <Article PubModel="Print-Electronic">
+        <Journal>
+          <ISSN IssnType="Electronic">1361-8423</ISSN>
+          <JournalIssue CitedMedium="Internet">
+            <Volume>98</Volume>
+            <PubDate><Year>2026</Year><Month>Dec</Month></PubDate>
+          </JournalIssue>
+          <Title>Medical image analysis</Title>
+          <ISOAbbreviation>Med Image Anal</ISOAbbreviation>
+        </Journal>
+        <ArticleTitle>Personalized federated learning for chest X-ray classification under label skew.</ArticleTitle>
+        <Abstract>
+          <AbstractText Label="BACKGROUND">Hospitals cannot share <i>raw</i> images.</AbstractText>
+          <AbstractText Label="METHODS">We propose a personalized federated method.</AbstractText>
+        </Abstract>
+        <AuthorList CompleteYN="Y">
+          <Author ValidYN="Y"><LastName>Martin</LastName><ForeName>Alice</ForeName></Author>
+          <Author ValidYN="Y"><CollectiveName>FedX Consortium</CollectiveName></Author>
+        </AuthorList>
+        <PublicationTypeList><PublicationType UI="D016428">Journal Article</PublicationType></PublicationTypeList>
+        <ArticleDate DateType="Electronic"><Year>2026</Year><Month>10</Month><Day>08</Day></ArticleDate>
+      </Article>
+      <MedlineJournalInfo><ISSNLinking>1361-8415</ISSNLinking></MedlineJournalInfo>
+    </MedlineCitation>
+    <PubmedData>
+      <ArticleIdList>
+        <ArticleId IdType="pubmed">41000001</ArticleId>
+        <ArticleId IdType="doi">10.1016/j.media.2026.103456</ArticleId>
+        <ArticleId IdType="pmc">PMC12345678</ArticleId>
+      </ArticleIdList>
+    </PubmedData>
+  </PubmedArticle>
+  <PubmedArticle>
+    <MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM">
+      <PMID Version="1">41000002</PMID>
+      <Article PubModel="Electronic">
+        <Journal>
+          <JournalIssue CitedMedium="Internet">
+            <PubDate><MedlineDate>2026 Sep-Oct</MedlineDate></PubDate>
+          </JournalIssue>
+          <Title>medRxiv : the preprint server for health sciences</Title>
+        </Journal>
+        <ArticleTitle>A medRxiv preprint on federated radiology</ArticleTitle>
+        <AuthorList><Author><LastName>Okafor</LastName><ForeName>David</ForeName></Author></AuthorList>
+        <PublicationTypeList><PublicationType UI="D000076942">Preprint</PublicationType></PublicationTypeList>
+      </Article>
+    </MedlineCitation>
+    <PubmedData><ArticleIdList><ArticleId IdType="pubmed">41000002</ArticleId></ArticleIdList></PubmedData>
+  </PubmedArticle>
+</PubmedArticleSet>

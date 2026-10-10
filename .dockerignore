@@ -1,0 +1,15 @@
+.git
+.github
+.venv
+**/__pycache__
+.pytest_cache
+.env
+.env.*
+!.env.example
+secrets.toml
+**/secrets.toml
+data/
+evaluation/campagnes/
+frontend/node_modules
+frontend/dist
+frontend/*.tsbuildinfo

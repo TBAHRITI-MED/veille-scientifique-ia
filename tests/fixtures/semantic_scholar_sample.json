@@ -1,0 +1,42 @@
+{
+  "total": 57,
+  "token": "NEXT_PAGE_TOKEN",
+  "data": [
+    {
+      "paperId": "abc123",
+      "title": "Personalized Federated Learning for Chest X-ray Classification Under Label Skew",
+      "abstract": "We propose a personalized federated learning method for multi-label chest X-ray classification across hospitals, with a longer abstract than OpenAlex.",
+      "venue": "Medical Image Analysis",
+      "publicationVenue": {"id": "v1", "name": "Medical Image Analysis", "type": "journal", "alternate_names": ["Med Image Anal"], "issn": "1361-8415"},
+      "publicationDate": "2026-10-07",
+      "externalIds": {"DOI": "10.1016/j.media.2026.103456", "ArXiv": "2610.04567", "CorpusId": 1},
+      "url": "https://www.semanticscholar.org/paper/abc123",
+      "openAccessPdf": {"url": "", "status": null},
+      "citationCount": 5,
+      "publicationTypes": ["JournalArticle"],
+      "authors": [{"authorId": "1", "name": "Alice Martin"}, {"authorId": "2", "name": "Bob Chen"}, {"authorId": "3", "name": "Chloé Durand"}],
+      "journal": {"name": "Medical Image Analysis"}
+    },
+    {
+      "paperId": "def456",
+      "title": "Federated LLM Fine-Tuning with Differential Privacy",
+      "abstract": null,
+      "venue": "Neural Information Processing Systems",
+      "publicationVenue": {"id": "v2", "name": "Neural Information Processing Systems", "type": "conference", "alternate_names": ["NeurIPS", "NIPS"]},
+      "publicationDate": "2026-09-30",
+      "externalIds": {"CorpusId": 2},
+      "url": "https://www.semanticscholar.org/paper/def456",
+      "openAccessPdf": null,
+      "citationCount": 0,
+      "publicationTypes": ["Conference"],
+      "authors": [{"authorId": "4", "name": "Eve Laurent"}],
+      "journal": null
+    },
+    {
+      "paperId": "nodate",
+      "title": "Paper Without Publication Date",
+      "publicationDate": null,
+      "externalIds": {}
+    }
+  ]
+}

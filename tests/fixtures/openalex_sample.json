@@ -1,0 +1,63 @@
+{
+  "meta": {"count": 42, "page": 1, "per_page": 3},
+  "results": [
+    {
+      "id": "https://openalex.org/W4400000001",
+      "doi": "https://doi.org/10.1016/j.media.2026.103456",
+      "display_name": "Personalized Federated Learning for Chest X-ray Classification under Label Skew",
+      "publication_date": "2026-10-07",
+      "type": "article",
+      "cited_by_count": 3,
+      "ids": {"openalex": "https://openalex.org/W4400000001", "doi": "https://doi.org/10.1016/j.media.2026.103456", "pmid": "https://pubmed.ncbi.nlm.nih.gov/41000001"},
+      "authorships": [
+        {"author": {"display_name": "Alice Martin"}},
+        {"author": {"display_name": "Bob Chen"}}
+      ],
+      "abstract_inverted_index": {"We": [0], "propose": [1], "a": [2], "personalized": [3], "federated": [4], "method.": [5]},
+      "primary_location": {
+        "landing_page_url": "https://doi.org/10.1016/j.media.2026.103456",
+        "pdf_url": null,
+        "source": {"display_name": "Medical Image Analysis", "type": "journal", "issn_l": "1361-8415", "issn": ["1361-8415", "1361-8423"]}
+      },
+      "best_oa_location": {"pdf_url": "https://arxiv.org/pdf/2610.04567"},
+      "locations": [
+        {"landing_page_url": "https://doi.org/10.1016/j.media.2026.103456", "source": {"display_name": "Medical Image Analysis", "type": "journal"}},
+        {"landing_page_url": "http://arxiv.org/abs/2610.04567v2", "source": {"display_name": "arXiv (Cornell University)", "type": "repository"}}
+      ]
+    },
+    {
+      "id": "https://openalex.org/W4400000002",
+      "doi": "https://doi.org/10.48550/arxiv.2610.09999",
+      "display_name": "A Preprint Only Indexed Through OpenAlex",
+      "publication_date": "2026-10-02",
+      "type": "preprint",
+      "cited_by_count": 0,
+      "ids": {"openalex": "https://openalex.org/W4400000002"},
+      "authorships": [{"author": {"display_name": "Zoé Petit"}}],
+      "abstract_inverted_index": null,
+      "primary_location": {
+        "landing_page_url": "http://arxiv.org/abs/2610.09999",
+        "source": {"display_name": "arXiv (Cornell University)", "type": "repository", "issn_l": null, "issn": null}
+      },
+      "best_oa_location": null,
+      "locations": []
+    },
+    {
+      "id": "https://openalex.org/W4400000003",
+      "doi": null,
+      "display_name": "Federated Foundation Models at MICCAI",
+      "publication_date": "2026-09-25",
+      "type": "article",
+      "cited_by_count": 1,
+      "ids": {},
+      "authorships": [],
+      "abstract_inverted_index": {"Short": [0], "abstract.": [1]},
+      "primary_location": {
+        "landing_page_url": "https://example.org/miccai/123",
+        "source": {"display_name": "MICCAI 2026", "type": "conference", "issn_l": null, "issn": null}
+      },
+      "best_oa_location": null,
+      "locations": []
+    }
+  ]
+}

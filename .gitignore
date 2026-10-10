@@ -1,0 +1,31 @@
+# Secrets : ne jamais publier de clé d'API
+.env
+.env.*
+!.env.example
+secrets.toml
+**/secrets.toml
+.streamlit/secrets.toml
+*.pem
+*.key
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Données locales (classements téléchargés, cache SQLite, profil, campagnes)
+data/
+*.db
+evaluation/campagnes/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+
+# Divers
+.DS_Store
+.idea/
+.vscode/
